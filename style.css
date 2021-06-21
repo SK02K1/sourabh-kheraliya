@@ -58,7 +58,18 @@ h1 {
     height: .15rem;
     margin: .3rem 0;
     background-color: white;
+    transition: all 200ms ease;
 }
+
+.line-1 {
+    transform: rotate(45deg) translate(5.3px);
+}
+
+.line-2 {
+    transform: rotate(-45deg) translate(4.4px);
+}
+
+
 
 .hero {
     padding: 0.75rem 2.25rem;
