@@ -52,6 +52,7 @@ a {
 
 .hero {
     padding: 0.75rem 2.25rem;
+    min-height: 90vh;
 }
 
 .img-avatar {
@@ -83,6 +84,7 @@ a {
     padding: 1.5rem 1rem;
     border: 0.156rem solid var(--accent-color);
     border-radius: 0.625rem;
+    background: var(--secondary-color);
 }
 
 .card h2 {
@@ -95,11 +97,24 @@ a {
     margin-top: 1rem;
     padding: .5rem .8rem;
     border-radius: 0.313rem;
-    font-weight: 500;
-    font-size: 1.105rem;
+    font-size: .875rem;
+    font-weight: 600;
 }
 
 .btn-primary {
     border: none;
     background: var(--accent-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 1.5rem 2.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+footer i {
+    font-size: 1.6rem;
 }
