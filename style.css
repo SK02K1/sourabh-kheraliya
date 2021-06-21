@@ -45,3 +45,34 @@ body {
     margin: .3rem 0;
     background-color: white;
 }
+
+.hero {
+    padding: 0.75rem 2.25rem;
+}
+
+.img-avatar {
+    display: block;
+    margin: 1rem auto;
+    width: 70%;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 1.5;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero p {
+    font-weight: var(--inter);
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: justify;
+    margin: 2rem 0;
+}
+
+.my-name {
+    font-weight: 600;
+
+
+}
