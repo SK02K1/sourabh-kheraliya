@@ -26,6 +26,16 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1rem 0rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .navbar {
     background: var(--secondary-color);
     padding: 0.75rem 2.25rem;
@@ -61,11 +71,6 @@ a {
     height: auto;
 }
 
-.hero h1 {
-    font-size: 1.4;
-    font-weight: 400;
-    text-align: center;
-}
 
 .hero p {
     font-size: 1.2rem;
@@ -87,13 +92,19 @@ a {
 }
 
 .card h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
     margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: .875rem;
 }
 
 
 .btn {
     display: inline-block;
-    margin-top: 1rem;
+    margin: 1rem .5rem 0rem 0rem;
     padding: .5rem .8rem;
     border-radius: 0.313rem;
     font-size: .875rem;
@@ -103,6 +114,10 @@ a {
 .btn-primary {
     border: none;
     background: var(--accent-color);
+}
+
+.btn-secondary {
+    border: 0.088rem solid var(--accent-color);
 }
 
 footer {
