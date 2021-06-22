@@ -56,6 +56,10 @@ h1 {
 }
 
 
+.navbar-links {
+    display: none;
+}
+
 
 .line {
     width: 1.35rem;
@@ -89,34 +93,34 @@ h1 {
 
 
 .show {
-    animation: nav-links-show 1s ease forwards ;
+    animation: menu-tray-nav-links-show 1s ease forwards;
 }
 
-@keyframes nav-links-show {
+@keyframes menu-tray-nav-links-show {
 
-    0%{
+    0% {
         display: none;
         opacity: 0;
     }
-    
-    100%{
+
+    100% {
         display: block;
         opacity: 1;
     }
 }
 
 .hide {
-    animation: nav-links-hide 400ms ease forwards ;
+    animation: menu-tray-nav-links-hide 400ms ease forwards;
 }
 
-@keyframes nav-links-hide {
+@keyframes menu-tray-nav-links-hide {
 
-    0%{
+    0% {
         display: block;
         opacity: 1;
     }
-    
-    100%{
+
+    100% {
         display: none;
         opacity: 0;
     }
@@ -227,4 +231,59 @@ footer {
 
 footer i {
     font-size: 1.8rem;
+}
+
+
+@media screen and (min-width : 635px) {
+
+    .navbar {
+        padding: 1.25rem 3.75rem;
+
+
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .navbar-links {
+        display: block;
+    }
+
+    .navbar-links li {
+        font-size: 1.075rem;
+        display: inline-block;
+        margin-left: 2rem;
+    }
+
+    .navbar-links li :hover {
+        color: #ccc;
+    }
+
+    .selected {
+        font-weight: 700;
+    }
+
+    .hero {
+        padding: 1.25rem 3.75rem;
+    }
+
+    .card {
+        margin: 1.25rem 3.75rem;
+    }
+
+
+    footer {
+
+        background-color: var(--secondary-color);
+        padding: 1.5rem 4.75rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    footer i {
+        font-size: 1.8rem;
+    }
 }
