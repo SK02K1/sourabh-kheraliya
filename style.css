@@ -231,6 +231,12 @@ footer {
 
 footer i {
     font-size: 1.8rem;
+    transition: all 200ms ease;
+}
+
+footer i:hover {
+    transform: scale(1.4);
+    color: var(--accent-color);
 }
 
 
@@ -238,8 +244,6 @@ footer i {
 
     .navbar {
         padding: 1.25rem 3.75rem;
-
-
     }
 
     .menu-icon {
@@ -268,6 +272,10 @@ footer i {
         padding: 1.25rem 3.75rem;
     }
 
+    .img-avatar {
+        width: 50%;
+    }
+
     .card {
         margin: 1.25rem 3.75rem;
     }
@@ -275,15 +283,60 @@ footer i {
 
     footer {
 
-        background-color: var(--secondary-color);
         padding: 1.5rem 4.75rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    }
+}
+
+
+@media screen and (min-width:835px) {
+
+    .navbar {
+        padding: 1.25rem 8rem;
     }
 
 
-    footer i {
-        font-size: 1.8rem;
+    .hero {
+        padding: 1.25rem 8rem;
     }
+
+
+    .img-avatar {
+        width: 40%;
+    }
+
+    .card {
+        margin: 1.25rem 8rem;
+    }
+
+
+    footer {
+        padding: 1.5rem 12rem;
+    }
+}
+
+@media screen and (min-width:1152px) {
+
+    .navbar {
+        padding: 1.25rem 25rem;
+    }
+
+
+    .hero {
+        padding: 1.25rem 25rem;
+    }
+
+
+    .img-avatar {
+        width: 50%;
+    }
+
+    .card {
+        margin: 1.25rem 25rem;
+    }
+
+
+    footer {
+        padding: 1.5rem 36rem;
+    }
+
 }
