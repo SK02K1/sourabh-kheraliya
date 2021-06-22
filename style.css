@@ -26,6 +26,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 h1 {
     font-size: 1.4rem;
     font-weight: 500;
@@ -67,6 +71,83 @@ h1 {
 
 .line-2 {
     transform: rotate(-45deg) translate(4.4px);
+}
+
+.menu-tray {
+    overflow: hidden;
+    background-color: orangered;
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-tray li {
+    font-weight: 500;
+}
+
+
+.show {
+    animation: nav-links-show 1s ease forwards ;
+}
+
+@keyframes nav-links-show {
+
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    
+    100%{
+        display: block;
+        opacity: 1;
+    }
+}
+
+.hide {
+    animation: nav-links-hide 400ms ease forwards ;
+}
+
+@keyframes nav-links-hide {
+
+    0%{
+        display: block;
+        opacity: 1;
+    }
+    
+    100%{
+        display: none;
+        opacity: 0;
+    }
+}
+
+.open {
+    animation: menu-tray-open 600ms ease forwards;
+}
+
+@keyframes menu-tray-open {
+    0% {
+        height: 0vh;
+    }
+
+    100% {
+        height: 30vh;
+    }
+}
+
+.close {
+    animation: menu-tray-close 600ms ease forwards;
+}
+
+@keyframes menu-tray-close {
+    0% {
+        height: 30vh;
+    }
+
+    100% {
+        height: 0vh;
+    }
 }
 
 
