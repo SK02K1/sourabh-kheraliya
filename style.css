@@ -123,7 +123,7 @@ h1 {
 }
 
 .open {
-    animation: menu-tray-open 600ms ease forwards;
+    animation: menu-tray-open 400ms ease forwards;
 }
 
 @keyframes menu-tray-open {
@@ -137,7 +137,7 @@ h1 {
 }
 
 .close {
-    animation: menu-tray-close 600ms ease forwards;
+    animation: menu-tray-close 400ms ease forwards;
 }
 
 @keyframes menu-tray-close {
