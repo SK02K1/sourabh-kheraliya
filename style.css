@@ -26,6 +26,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 h1 {
     font-size: 1.4rem;
     font-weight: 500;
@@ -52,13 +56,105 @@ h1 {
 }
 
 
+.navbar-links {
+    display: none;
+}
+
 
 .line {
     width: 1.35rem;
     height: .15rem;
     margin: .3rem 0;
     background-color: white;
+    transition: all 200ms ease;
 }
+
+.line-1 {
+    transform: rotate(45deg) translate(5.3px);
+}
+
+.line-2 {
+    transform: rotate(-45deg) translate(4.4px);
+}
+
+.menu-tray {
+    overflow: hidden;
+    background-color: orangered;
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-tray li {
+    font-weight: 500;
+}
+
+
+.show {
+    animation: menu-tray-nav-links-show 1s ease forwards;
+}
+
+@keyframes menu-tray-nav-links-show {
+
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+.hide {
+    animation: menu-tray-nav-links-hide 400ms ease forwards;
+}
+
+@keyframes menu-tray-nav-links-hide {
+
+    0% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+.open {
+    animation: menu-tray-open 400ms ease forwards;
+}
+
+@keyframes menu-tray-open {
+    0% {
+        height: 0vh;
+    }
+
+    100% {
+        height: 30vh;
+    }
+}
+
+.close {
+    animation: menu-tray-close 400ms ease forwards;
+}
+
+@keyframes menu-tray-close {
+    0% {
+        height: 30vh;
+    }
+
+    100% {
+        height: 0vh;
+    }
+}
+
+
 
 .hero {
     padding: 0.75rem 2.25rem;
@@ -81,6 +177,10 @@ h1 {
 
 .my-name {
     font-weight: 600;
+}
+
+.emoji {
+    font-size: 1.4rem;
 }
 
 .card {
@@ -141,4 +241,112 @@ footer {
 
 footer i {
     font-size: 1.8rem;
+    transition: all 200ms ease;
+}
+
+footer i:hover {
+    transform: scale(1.4);
+    color: var(--accent-color);
+}
+
+
+@media screen and (min-width : 635px) {
+
+    .navbar {
+        padding: 1.25rem 3.75rem;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .navbar-links {
+        display: block;
+    }
+
+    .navbar-links li {
+        font-size: 1.075rem;
+        display: inline-block;
+        margin-left: 2rem;
+    }
+
+    .navbar-links li :hover {
+        color: #ccc;
+    }
+
+    .selected {
+        font-weight: 700;
+    }
+
+    .hero {
+        padding: 1.25rem 3.75rem;
+    }
+
+    .img-avatar {
+        width: 50%;
+    }
+
+    .card {
+        margin: 1.25rem 3.75rem;
+    }
+
+
+    footer {
+
+        padding: 1.5rem 4.75rem;
+    }
+}
+
+
+@media screen and (min-width:835px) {
+
+    .navbar {
+        padding: 1.25rem 8rem;
+    }
+
+
+    .hero {
+        padding: 1.25rem 8rem;
+    }
+
+
+    .img-avatar {
+        width: 40%;
+    }
+
+    .card {
+        margin: 1.25rem 8rem;
+    }
+
+
+    footer {
+        padding: 1.5rem 12rem;
+    }
+}
+
+@media screen and (min-width:1152px) {
+
+    .navbar {
+        padding: 1.25rem 25rem;
+    }
+
+
+    .hero {
+        padding: 1.25rem 25rem;
+    }
+
+
+    .img-avatar {
+        width: 50%;
+    }
+
+    .card {
+        margin: 1.25rem 25rem;
+    }
+
+
+    footer {
+        padding: 1.5rem 36rem;
+    }
+
 }
